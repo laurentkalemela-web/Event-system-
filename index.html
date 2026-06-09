@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html 
+xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event List Guest Manager</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+    <script src="js/script.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Event List Guest Manager</h1>
+
+        <form action="save_guest.php" method="post">
+
+            <label>Full Name</label>
+            <input type="text" name="fullname" required="required"
+            pattern="[A-Za-z\s]+"
+            title="jina linatakiwa liwe herufi tu"
+            />
+
+            <label>Phone Number </label>
+            <input type="text" name="phone" required="required"
+              placeholder="+2557xxxxxxxx or 07xxxxxxx"
+              pattern="^(\+255\d{9}|0[67]\d{8})$ 
+            title="namba ya simu iwe linatakiwa liwe tarakimu tu"
+            />
+
+            <label>Event Name</label>
+            <input type="text" name="eventname" required="required" />
+
+            <label>Email Address</label>
+            <input type="email" name="email" required="required" />
+
+
+            <label>Status</label>
+            <select name="status">
+                <option value="confirmed">Confirmed</option>
+                 <option value="Pending">Pending</option>
+            </select>
+            <button type="submit">Add Guest</button>
+
+        </form>
+        <div id="message"></div>
+        <h2>Guest List</h2>
+        <div id="guestList"></div>
+    </div>
+</body>
+</html>
