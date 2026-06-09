@@ -9,6 +9,6 @@ Setup Guide Follow these steps to run the system on your computer:
 
 i)Start the Server Make sure both Apache is running through XAMPP
 ii)Place the Project Files Copy the project folder and paste it inside: htdocs (for XAMPP)
-iii)Open your browser and enter: http://localhost/Event list system /
+iii)Open your browser and enter: http://localhost/Event system
 STUDENT NAME: Laurent kalemela
 programme name : ICTM-2
